@@ -1,0 +1,40 @@
+services:
+  flask:
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 256M
+        reservations:
+          cpus: "0.1"
+          memory: 128M
+
+  phpmyadmin:
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 128M
+        reservations:
+          cpus: "0.1"
+          memory: 64M
+
+  mysql:
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 900M
+        reservations:
+          cpus: "0.5"
+          memory: 200M
+
+  nginx:
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 128M
+        reservations:
+          cpus: "0.1"
+          memory: 64M
