@@ -1,3 +1,4 @@
+#This is a blog api
 from flask import Flask, request, jsonify
 import pymysql
 import os
